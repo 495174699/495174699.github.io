@@ -1,0 +1,442 @@
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+div,
+span,
+nav,
+ol,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+@media only screen and (max-width:1200px) {
+    #topbanner {
+        width: 1200px;
+    }
+}
+
+.one,
+.there {
+    width: 100%;
+    height: 100vh;
+}
+
+.one {
+    padding: 20px;
+    background-color: #55efc4;
+}
+
+
+/* 左侧侧边栏 */
+
+.one .side {
+    float: left;
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.side span {
+    width: 0;
+    color: #fff;
+    height: 25px;
+    display: block;
+    margin: 5px;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.side .a {
+    text-indent: 2em;
+    animation: word 1s 0s linear forwards;
+}
+
+.side .b {
+    animation: word 1s 1s linear forwards;
+}
+
+.side .c {
+    animation: word 1s 2s linear forwards;
+}
+
+.side .d {
+    animation: word 1s 3s linear forwards;
+}
+
+.side .e {
+    animation: word 1s 4s linear forwards;
+}
+
+.side .f {
+    animation: word 1s 5s linear forwards;
+}
+
+.side .g {
+    animation: word 1s 6s linear forwards;
+}
+
+.side .h {
+    animation: word 1s 7s linear forwards;
+    color: red;
+}
+
+.side .i {
+    animation: word 1s 8s linear forwards;
+}
+
+.side .j {
+    animation: word 1s 9s linear forwards;
+}
+
+.side .k {
+    animation: word 1s 10s linear forwards;
+}
+
+.side .l {
+    animation: word 1s 11s linear forwards;
+}
+
+.side .m {
+    animation: word 1s 12s linear forwards;
+}
+
+.side .n {
+    animation: word 1s 13s linear forwards;
+}
+
+.side .o {
+    animation: word 1s 14s linear forwards;
+}
+
+.side .p {
+    animation: word 1s 15s linear forwards;
+}
+
+@keyframes word {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* //联系我 */
+
+.side .me {
+    width: 100%;
+    height: 170px;
+    /* border: 1px solid red; */
+}
+
+.side .me .qq,
+.side .me .weixin {
+    /* float: left; */
+    width: 47%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.me .me-qq {
+    border-right: 5px solid #ccc;
+}
+
+.me .me-qq,
+.me .me-weixin {
+    display: none;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.me .me-qq img,
+.me .me-weixin img {
+    width: 100%;
+    height: 100%;
+}
+
+.me .me-weixin {
+    float: right;
+}
+
+
+/* 右侧导航栏 */
+
+.one .aside {
+    float: right;
+    width: calc(80% - 10px);
+    height: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.363);
+    /* border: 1px solid red; */
+}
+
+.aside h1 {
+    text-align: center;
+}
+
+.aside .tree {
+    position: relative;
+    width: 100%;
+    height: 2%;
+    margin-top: 150px;
+    border-radius: 0 50px 50px 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.aside .tree::after {
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 50%;
+    top: 50%;
+    left: 10px;
+    border-radius: 0 50px 50px 0;
+    transform: translate(0, -50%);
+    background-color: #fff;
+    animation: line1 1s ease-in-out;
+}
+
+@keyframes line1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+.aside .tree::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 5%;
+    width: 0%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: line2 .2s 1s linear forwards;
+}
+
+@keyframes line2 {
+    from {
+        width: 0;
+        height: 0
+    }
+    to {
+        width: 1%;
+        height: 100%;
+    }
+}
+
+.aside .tree .one,
+.aside .tree .two,
+.aside .tree .there,
+.aside .tree .four {
+    display: none;
+    position: absolute;
+    width: 8%;
+    height: 150px;
+    padding: 0;
+    top: 0;
+    left: 0;
+    color: rgb(16, 16, 17);
+    text-align: center;
+    word-wrap: break-word;
+    color: #fff;
+    border-radius: 0 0 10% 10%;
+    background-color: #55efc4;
+    transition: all 1s linear;
+}
+
+.aside .tree .two,
+.aside .tree .four {
+    border-radius: 10% 10% 0 0;
+}
+
+.aside .tree .one {
+    top: 17px;
+}
+
+.aside .tree .two {
+    top: -150px;
+    left: 200px;
+}
+
+.aside .tree .there {
+    top: 17px;
+    left: 400px;
+}
+
+.aside .tree .four {
+    top: -150px;
+    left: 600px;
+}
+
+.there {
+    position: relative;
+    overflow: hidden;
+    /* background-color: #0984e3; */
+}
+
+.there .fly-one,
+.there .fly-two {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 0;
+    text-align: center;
+    line-height: 87px;
+    font-weight: 800;
+    font-size: 20px;
+    opacity: .5;
+    border-radius: 8px;
+    background-color: #ccc;
+    transition: all 1s ease-in;
+}
+
+.there .fly-one {
+    left: -200px;
+}
+
+.there .fly-two {
+    right: -200px;
+}
+
+.there .fly-one-bottom,
+.there .fly-two-bottom {
+    position: absolute;
+    width: 25%;
+    left: 0;
+    bottom: -90%;
+    height: calc(90% - 0px);
+    /* background-color: blue; */
+    transition: all 1s ease-in-out;
+}
+
+.there .fly-two-bottom {
+    left: calc(100% - 25%);
+    right: 0;
+}
+
+.fly-one-bottom h3,
+.fly-two-bottom h3 {
+    text-align: center;
+}
+
+.fly-one-bottom ul li {
+    margin: 10px;
+}
+
+
+/* center部分 */
+
+.there .center {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    height: 50%;
+    width: 50%;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    background-color: #fd79a8;
+}
+
+.there .center .box {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    perspective: 8000px;
+    transform-style: preserve-3d;
+    /* perspective-origin: left top; */
+    /* transition: all 2s linear; */
+    /* border: 1px solid blue; */
+    animation: circle 5s linear infinite;
+    /* transform: rotateY(25deg) rotateX(20deg); */
+    /* transform: rotateX(30deg); */
+}
+
+.there .center .box .box-one,
+.there .center .box .box-two,
+
+/* .there .center .box .box-there,
+.there .center .box .box-four, */
+
+.there .center .box .box-five,
+.there .center .box .box-six {
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+}
+
+
+/* 前 */
+
+.there .center .box .box-two {
+    transform: translateZ(-100px) rotateX(180deg);
+    background-color: #1f93e0;
+}
+
+
+/* 后 */
+
+.there .center .box .box-one {
+    transform: translateZ(100px);
+    background-color: #9d0191;
+}
+
+.there .center .box .box-five {
+    transform: translateY(-100px) rotateX(90deg);
+    background-color: #fd3a69;
+}
+
+
+/* 下 */
+
+.there .center .box .box-six {
+    transform: translateY(100px) rotateX(-90deg);
+    background-color: #fecd1a;
+}
+
+@keyframes circle {
+    from {}
+    to {
+        transform: rotateX(360deg);
+    }
+}
