@@ -262,7 +262,9 @@ div {
 .aside .tree .one,
 .aside .tree .two,
 .aside .tree .there,
-.aside .tree .four {
+.aside .tree .four,
+.aside .tree .five,
+.aside .tree .six {
     display: none;
     position: absolute;
     width: 8%;
@@ -280,7 +282,8 @@ div {
 }
 
 .aside .tree .two,
-.aside .tree .four {
+.aside .tree .four,
+.aside .tree .six {
     border-radius: 10% 10% 0 0;
 }
 
@@ -301,6 +304,16 @@ div {
 .aside .tree .four {
     top: -150px;
     left: 600px;
+}
+
+.aside .tree .five {
+    top: 17px;
+    left: 800px;
+}
+
+.aside .tree .six {
+    top: -150px;
+    left: 1000px;
 }
 
 .there {
