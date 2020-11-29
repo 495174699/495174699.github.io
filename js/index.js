@@ -9,7 +9,9 @@ var flytwob = document.querySelector('.fly-two-bottom')
 var treeone = one.querySelector('.one')
 var treetwo = one.querySelector('.two')
 var treethere = one.querySelector('.there')
-var treeofour = one.querySelector('.four')
+var treefour = one.querySelector('.four')
+var treefive = one.querySelector('.five')
+var treesix = one.querySelector('.six')
 var qq = document.querySelector('.qq')
 var weixin = document.querySelector('.weixin')
 var meqq = document.querySelector('.me-qq')
@@ -39,8 +41,14 @@ setTimeout(function() {
     treethere.style.display = 'block'
 }, 300)
 setTimeout(function() {
-    treeofour.style.display = 'block'
+    treefour.style.display = 'block'
 }, 400)
+setTimeout(function() {
+    treefive.style.display = 'block'
+}, 500)
+setTimeout(function() {
+    treesix.style.display = 'block'
+}, 600)
 qq.onmousemove = function() {
     meqq.style.display = 'block'
 }
