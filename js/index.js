@@ -47,17 +47,25 @@ setTimeout(function() {
     treefive.style.display = 'block'
 }, 500)
 setTimeout(function() {
-    treesix.style.display = 'block'
-}, 600)
-qq.onmousemove = function() {
-    meqq.style.display = 'block'
-}
-qq.onmouseout = function() {
-    meqq.style.display = 'none'
-}
-weixin.onmouseover = function() {
-    meweixin.style.display = 'block'
-}
-weixin.onmouseleave = function() {
-    meweixin.style.display = 'none'
-}
+        treesix.style.display = 'block'
+    }, 600)
+    // qq.onmouseover = function() {
+    //     meqq.style.display = 'block'
+    // }
+    // qq.onmouseout = function() {
+    //     meqq.style.display = 'none'
+    // }
+    // weixin.onmouseover = function() {
+    //     meweixin.style.display = 'block'
+    // }
+    // weixin.onmouseleave = function() {
+    //         meweixin.style.display = 'none'
+    //     }
+    //不显示右击菜单　ｃｏｎｔｅｘｔｍｅｎｕ
+document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    })
+    //禁止选中ｓｅｌｅｃｔｓｔａｒｔ
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+})
