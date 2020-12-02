@@ -62,10 +62,30 @@ setTimeout(function() {
     //         meweixin.style.display = 'none'
     //     }
     //不显示右击菜单　ｃｏｎｔｅｘｔｍｅｎｕ
-document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    })
-    //禁止选中ｓｅｌｅｃｔｓｔａｒｔ
-document.addEventListener('selectstart', function(e) {
-    e.preventDefault();
-})
+// document.addEventListener('contextmenu', function(e) {
+//         e.preventDefault();
+//     })
+//     //禁止选中ｓｅｌｅｃｔｓｔａｒｔ
+// document.addEventListener('selectstart', function(e) {
+//     e.preventDefault();
+// })
+  no(document)
+function no(document) {
+            document.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                })
+                //禁止选中ｓｅｌｅｃｔｓｔａｒｔ
+            document.addEventListener('selectstart', function(e) {
+                e.preventDefault();
+            })
+            document.addEventListener('keydown', e => {
+                console.log(e.keyCode);
+                if (e.keyCode == 123) {
+                    // console.log(e.returnValue);
+                    alert('作者禁止操作控制台')
+                    e.returnValue = false;
+                    return (false);
+                }
+            })
+        }
+      
