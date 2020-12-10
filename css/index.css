@@ -16,6 +16,14 @@ body {
     padding: 0;
 }
 
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 999999999999999999;
+}
+
 li {
     list-style: none;
 }
