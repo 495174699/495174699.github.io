@@ -82,7 +82,7 @@ function no(document) {
                 console.log(e.keyCode);
                 if (e.keyCode == 123) {
                     // console.log(e.returnValue);
-                    alert('作者禁止操作控制台')
+                    alert('管理员禁止操作控制台')
                     e.returnValue = false;
                     return (false);
                 }
