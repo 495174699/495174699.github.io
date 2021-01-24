@@ -43,6 +43,69 @@ div {
     width: 100%;
 }
 
+.container .one .side>h3 i {
+    animation: light 7s linear infinite alternate;
+}
+
+.line {
+    position: relative;
+    width: 350px;
+    height: 21px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.line::after {
+    position: absolute;
+    content: "";
+    width: 200%;
+    height: 200%;
+    left: -50%;
+    top: -50%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    animation: rotate 1.3s linear;
+    background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+}
+
+.line::before {
+    z-index: 2;
+    content: '个人简历';
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-weight: 800;
+    background-color: #55efc4;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes light {
+    0% {
+        color: #000;
+    }
+    25% {
+        color: #fecd1a;
+    }
+    50% {
+        color: chartreuse;
+    }
+    75% {
+        color: darkviolet;
+    }
+    100% {
+        color: violet;
+    }
+}
+
 @media only screen and (max-width:1200px) {
     #topbanner {
         width: 1200px;
